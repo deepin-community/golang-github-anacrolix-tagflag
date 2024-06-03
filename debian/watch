@@ -1,0 +1,2 @@
+version=4
+opts="mode=git,pretty=0.0.0-%cd-%h" https://github.com/anacrolix/tagflag.git HEAD
