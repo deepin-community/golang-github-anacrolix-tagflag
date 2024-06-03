@@ -1,5 +1,30 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-anacrolix-tagflag (0.0.0-20180109-2146c8d-4) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 29 Nov 2022 19:19:32 +0000
+
+golang-github-anacrolix-tagflag (0.0.0-20180109-2146c8d-3) unstable; urgency=medium
+
+  * drop missinggo bootstrap patch vendor_missinggo.patch.
+    Build-Depends: golang-github-anacrolix-missinggo-dev
+
+ -- Drew Parsons <dparsons@debian.org>  Sat, 14 Sep 2019 17:00:54 +0800
+
+golang-github-anacrolix-tagflag (0.0.0-20180109-2146c8d-2) unstable; urgency=medium
+
+  * gratuitous source upload to enable migration to testing
+
+ -- Drew Parsons <dparsons@debian.org>  Sun, 25 Aug 2019 19:24:35 +0800
+
+golang-github-anacrolix-tagflag (0.0.0-20180109-2146c8d-1) unstable; urgency=medium
+
+  * Initial release (Closes: #929202)
+  * bootstrap the package with debian patch
+    vendor_missinggo.patch, which vendors
+    github.com/anacrolix/missinggo (slices and creak::Unchomp) to
+    resolve a circular dependency between tagflag and missinggo.
+
+ -- Drew Parsons <dparsons@debian.org>  Thu, 01 Aug 2019 15:23:29 +0800
